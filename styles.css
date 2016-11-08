@@ -302,10 +302,10 @@ html, body {
     height: 37.5%;
     display: block;
     background-image: url(assets/AdobeStock_Buildings_Image.jpeg);
-    background-image: -webkit-linear-gradient(25deg, transparent, #ffffff 75%), url(assets/AdobeStock_Buildings_Image.jpeg);
-    background-image: -o-linear-gradient(25deg, rgba(255, 255, 255, 0), #ffffff 75%), url(assets/AdobeStock_Buildings_Image.jpeg);
-    background-image: -moz-linear-gradient(25deg, transparent, #ffffff 75%), url(assets/AdobeStock_Buildings_Image.jpeg);
-    background-image: linear-gradient(25deg, transparent, #ffffff 75%), url(assets/AdobeStock_Buildings_Image.jpeg);
+    background-image: -webkit-linear-gradient(18deg, transparent, #ffffff 72%), url(assets/AdobeStock_Buildings_Image.jpeg);
+    background-image: -o-linear-gradient(18deg, rgba(255, 255, 255, 0), #ffffff 72%), url(assets/AdobeStock_Buildings_Image.jpeg);
+    background-image: -moz-linear-gradient(18deg, transparent, #ffffff 72%), url(assets/AdobeStock_Buildings_Image.jpeg);
+    background-image: linear-gradient(18deg, transparent, #ffffff 72%), url(assets/AdobeStock_Buildings_Image.jpeg);
     background-repeat: no-repeat;
     background-position: 67% 34%;
     background-size: 160% 160%;
