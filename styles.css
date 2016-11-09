@@ -75,14 +75,14 @@ a {
 }
 
 .background-left {
-  width: 33.33%;
+  width: 50%;
   height: 100%;
   display: inline-block;
   background-image: url(assets/AdobeStock_Buildings_Image.jpeg);
-  background-image: -webkit-linear-gradient(left, transparent, #ffffff), url(assets/AdobeStock_Buildings_Image.jpeg);
-  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff), url(assets/AdobeStock_Buildings_Image.jpeg);
-  background-image: -moz-linear-gradient(left, transparent, #ffffff), url(assets/AdobeStock_Buildings_Image.jpeg);
-  background-image: linear-gradient(to right, transparent, #ffffff), url(assets/AdobeStock_Buildings_Image.jpeg);
+  background-image: -webkit-linear-gradient(90deg, transparent, #ffffff 50%), url(assets/AdobeStock_Buildings_Image.jpeg);
+  background-image: -o-linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 50%), url(assets/AdobeStock_Buildings_Image.jpeg);
+  background-image: -moz-linear-gradient(90deg, transparent, #ffffff 50%), url(assets/AdobeStock_Buildings_Image.jpeg);
+  background-image: linear-gradient(90deg, transparent, #ffffff 50%), url(assets/AdobeStock_Buildings_Image.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -92,26 +92,15 @@ a {
   font-size: 0px;
 }
 
-.background-middle {
-  width: 33.33%;
-  height: 100%;
-  display: inline-block;
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
-  float: left;
-  font-size: 0px;
-}
-
 .background-right {
-  width: 33.33%;
+  width: 50%;
   height: 100%;
   display: inline-block;
   background-image: url(assets/Noke_lockgate.jpg);
-  background-image: -webkit-linear-gradient(left, #ffffff, transparent), url(assets/Noke_lockgate.jpg);
-  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0), #ffffff), url(assets/Noke_lockgate.jpg);
-  background-image: -moz-linear-gradient(left, #ffffff, transparent), url(assets/Noke_lockgate.jpg);
-  background-image: linear-gradient(to right, #ffffff, transparent), url(assets/Noke_lockgate.jpg);
+  background-image: -webkit-linear-gradient(90deg, #ffffff 50%, transparent), url(assets/Noke_lockgate.jpg);
+  background-image: -o-linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff  50%), url(assets/Noke_lockgate.jpg);
+  background-image: -moz-linear-gradient(90deg, #ffffff  50%, transparent), url(assets/Noke_lockgate.jpg);
+  background-image: linear-gradient(90deg, #ffffff  50%, transparent), url(assets/Noke_lockgate.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -265,8 +254,11 @@ a {
 @media only screen and (max-device-width : 675px) {
   
   .header {
-    height: 35px;
-    z-index: 1;
+  height: 35px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 1px #000000;
+  -moz-box-shadow: 0px 0px 1px #000000;
+  box-shadow: 0px 0px 1px #000000;
   }
   
   .noke-title {
@@ -289,10 +281,10 @@ a {
   
   .background-left {
     width: 100%;
-    height: 37.5%;
+    height: 50%;
     display: block;
     background-image: url(assets/Noke_lockgate.jpg);
-    background-image: -webkit-linear-gradient(0deg, #ffffff 16%, transparent), url(assets/Noke_lockgate.jpg);
+    background-image: -webkit-linear-gradient(46deg, #ffffff 16%, transparent), url(assets/Noke_lockgate.jpg);
     background-image: -o-linear-gradient(0deg, rgba(255, 255, 255, 0), #ffffff 16%), url(assets/Noke_lockgate.jpg);
     background-image: -moz-linear-gradient(0deg, #ffffff 16%, transparent), url(assets/Noke_lockgate.jpg);
     background-image: linear-gradient(0deg, #ffffff 16%, transparent), url(assets/Noke_lockgate.jpg);
@@ -302,15 +294,9 @@ a {
     z-index: -10;
   }
   
-  .background-middle {
-    width: 100%;
-    height: 25%;
-    display: block;
-  }
-  
   .background-right {
     width: 100%;
-    height: 37.5%;
+    height: 50%;
     display: block;
     background-image: url(assets/AdobeStock_Buildings_Image.jpeg);
     background-image: -webkit-linear-gradient(18deg, transparent, #ffffff 60%), url(assets/AdobeStock_Buildings_Image.jpeg);
@@ -325,7 +311,8 @@ a {
   .center-content {
     width: 100%;
     min-width: 100%;
-    height: 50%;
+    height: 45%;
+    min-height: 315px;
   }
   
   .main-title {
@@ -334,24 +321,34 @@ a {
   
   .center-container {
     width: 100%;
-    height: 77%;
+    height: 50%;
+    margin: 0;
   }
   
   .center-left {
-    position: relative;
-    top: 45%;
+    position: absolute;
+    bottom: 0;
   }
   
   .center-left:after {
-    width: 85%;
+    display: none;
+  }
+  
+  .center-right:after {
+    content: "";
+    display: block;
+    width: 70%;
     height: 1px;
-    top: -73%;
-    left: 7.5%;
+    background: rgb(207, 206, 206);
+    position: relative;
+    top: 30px;
+    padding: 0;
+    margin: 0 auto;
   }
   
   .center-right {
-    position: relative;
-    bottom: 110%;
+    position: absolute;
+    top: 0;
   }
   
   .building {
