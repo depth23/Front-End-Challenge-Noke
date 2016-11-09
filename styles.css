@@ -362,6 +362,11 @@ a {
     height: 40px;
   }
   
+  .image-a {
+    height: 40px;
+    width: 40px;
+  }
+  
   .center-title {
     font-size: 21px;
   }
