@@ -1,10 +1,14 @@
-/*Your Styles Here.*/
-
 html, body {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border: none;
 }
 
 .container {
@@ -159,6 +163,13 @@ html, body {
   left: 100.5%;
   padding: 0;
   margin: 0;
+}
+
+.image-a {
+  height: 75px;
+  width: 75px;
+  display: block;
+  margin: 0 auto;
 }
 
 .building {
